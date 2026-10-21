@@ -1,0 +1,14 @@
+title = "Custom Gitleaks config"
+
+[extend]
+useDefault = true
+
+[[rules]]
+id = "myapp-api-key"
+description = "MyApp internal API key"
+regex = '''myapp_live_[A-Za-z0-9]{20}'''
+keywords = ["myapp_live_"]
+
+[allowlist]
+description = "Ignore test fixtures and docs"
+paths = ['''docs/.*''', '''tests/fixtures/.*''']
