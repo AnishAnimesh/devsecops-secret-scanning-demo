@@ -1,3 +1,6 @@
+AWS_ACCESS_KEY_ID = "REMOVED"
+AWS_SECRET_ACCESS_KEY = "REMOVED"
+
 import os
 
 def connect_to_cloud():
